@@ -5,21 +5,32 @@
 	import flash.text.*;
 
 	public class main extends MovieClip {
+		public var xcenter = 313;
+		public var ycenter = 229.75;
 		
-	//	public var BALLS:testmc = new testmc;
+		public var _rootie = this;
 		private var tf:TextField = new TextField();
 
 		public function main() {
-			trace("woof?");
-
-			stage.addChild(tf);
-			tf.width = 500;
-			tf.text = "I AM A GOD. FEAR ME, BYTECODE HEATHENS!"
+			// i love constructing!
 		}
 
 		public function starteverything(){
 			var button:sexybutton = new sexybutton();
+			var otherbutton:sexybutton = new sexybutton();
+			button.displaymc = new testmc;
+			otherbutton.displaymc = new othertestmc;
+			button.init();
+			otherbutton.init();
+
 			stage.addChild(button);
+			stage.addChild(otherbutton)
+			button.x = 520.3;
+			button.y = 380.05;
+			otherbutton.x = 244.05;
+			otherbutton.y = 181.55;
+
+			// i hope that you guys get this. i don't. (lying for the joke)
 		}
 
 	}

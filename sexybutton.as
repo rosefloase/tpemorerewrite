@@ -5,12 +5,14 @@
 
 	public class sexybutton extends MovieClip {
 	
-		private var bgd:Shape;
-		private var labelField:TextField;
+		public var displaymc = new testmc;
 
 		public function sexybutton() {
-			var newtmc:testmc = new testmc;
-			addChild(newtmc);
+			// woof
+		}
+
+		public function init(){
+			addChild(displaymc);
 			trace("added kid");
 		}
 
