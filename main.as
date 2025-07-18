@@ -8,29 +8,34 @@
 		public var xcenter = 313;
 		public var ycenter = 229.75;
 		
-		public var _rootie = this;
-		private var tf:TextField = new TextField();
+		public var textbox:textboxanim = new textboxanim
 
 		public function main() {
 			// i love constructing!
 		}
 
 		public function starteverything(){
+			// start with buttons
+			addbutton(testmc, 520.3, 380.05);
+			addbutton(othertestmc, 244.05, 181.55);
+
+			// finally, add textbox
+			stage.addChild(textbox);
+			textbox.x = 320;
+			textbox.y = 388.45;
+		}
+
+		private function addbutton(gif, x, y){
 			var button:sexybutton = new sexybutton();
-			var otherbutton:sexybutton = new sexybutton();
-			button.displaymc = new testmc;
-			otherbutton.displaymc = new othertestmc;
+			button.displaymc = new gif;
 			button.init();
-			otherbutton.init();
+			stage.addChild(button)
+			button.x = x
+			button.y = y
+		}
 
-			stage.addChild(button);
-			stage.addChild(otherbutton)
-			button.x = 520.3;
-			button.y = 380.05;
-			otherbutton.x = 244.05;
-			otherbutton.y = 181.55;
-
-			// i hope that you guys get this. i don't. (lying for the joke)
+		public function tbchange(){
+			textbox.gotoAndPlay("rise");
 		}
 
 	}
