@@ -1,0 +1,14 @@
+{
+    "data": 
+        {
+            "testmc": [
+                {"text": "* test 1"},
+                {"text": "* test 2 :o"}
+            ],
+	    "othertestmc": [
+		    {"text":"* woof"},
+		    {"text":"* woofmeow"}
+		]
+        }
+    
+}
