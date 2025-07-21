@@ -8,8 +8,6 @@
 	import flash.geom.ColorTransform;
 
 	public class main extends MovieClip { // todo: figure out which variables should be public, private, or nonexistent when the flash is done
-		public var xcenter = 313;
-		public var ycenter = 229.75;
 		public var textbox;
 		public var selectrect:MovieClip = new MovieClip();
 		public var classname;
@@ -47,7 +45,7 @@
 			  jsonloaded = true;
 		}
 
-		public function starteverything(){
+		private function starteverything(){
 			// first, add textbox
 			textbox = new textboxanim;
 			stage.addChild(textbox);
@@ -63,7 +61,7 @@
 			selectrect.graphics.drawRect(0, 0, 640, 480);
 			selectrect.graphics.endFill();
 			stage.addChild(selectrect);
-			stage.setChildIndex(selectrect, 0);
+			stage.setChildIndex(selectrect, stage.numChildren-1);
 		}
 
 		private function addbutton(gif, x, y){
@@ -77,6 +75,10 @@
 			button.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
 				tbchange(gif);
 			});
+		}
+
+		private function allowclick(){
+			stage.setChildIndex(selectrect, 0);
 		}
 
 		public function tbchange(whatmc){ // todo: clean this up when the flash is like. completely done.
@@ -93,6 +95,7 @@
 			}
 			if (json[classname][chatindex] != null){
 				textbox.tb.dude.text = json[classname][chatindex].text; // dude. dude why is the .txt so deep. eff em ell
+				rootie.dogmc.gotoAndPlay(json[classname][chatindex].loop);
 				stage.setChildIndex(textbox, stage.numChildren-1);
 				stage.setChildIndex(selectrect, stage.numChildren-1);
 				selectrect.buttonMode = true;
@@ -103,6 +106,7 @@
 				selectrect.buttonMode = false;
 				stage.setChildIndex(selectrect, 0);
 				textbox.gotoAndPlay("fall");
+				rootie.dogmc.gotoAndPlay("idle");
 				chatindex = 0;
 			}
 		}
