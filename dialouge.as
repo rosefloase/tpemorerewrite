@@ -7,13 +7,11 @@
 {
     "data": 
         {
-            "testmc": [
-                {"text": "* test 1", "loop":"talk1"},
-                {"text": "* test 2 :o", "loop":"talk2"}
-            ],
-            "othertestmc": [
+            "computer": [
                     {"text":"* woof", "loop":"talk2"},
-                    {"text":"* woofmeow", "loop":"talk1"}
+                    {"text":"* woofmeow", "loop":"talk1"},
+		    {"text":"* okay so do you want to go to this", "loop":"talk1", "link":"/computer/"},
+                    {"text":"* sigh... okay", "loop":"talk1"}
                 ]
         }
     

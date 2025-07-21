@@ -30,8 +30,7 @@
 			textbox.y = 388.45;
 
 			// then add buttons
-			addbutton(testmc, -215.15, -177.9);
-			addbutton(othertestmc, -128.95, -310.6);
+			addbutton(computer, -344.9, -769.75);
 
 			// rectangle used for stealing inputs when the textbox is open
 			selectrect.graphics.beginFill(0x000000, 0);
@@ -71,11 +70,28 @@
 				default: 
 			}
 			if (json[classname][chatindex] != null){
+				if (json[classname][chatindex].link == undefined){
+					textbox.tb.gotoAndStop("main");
+					stage.setChildIndex(textbox, stage.numChildren-1);
+					stage.setChildIndex(selectrect, stage.numChildren-1);
+					selectrect.buttonMode = true;
+				}
+				else{
+					textbox.tb.gotoAndPlay("question");
+					stage.setChildIndex(selectrect, stage.numChildren-1);
+					stage.setChildIndex(textbox, stage.numChildren-1);
+
+					textbox.tb.yesbutton.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
+						var request:URLRequest = new URLRequest("https://thepersonever.net"+json[classname][chatindex-1].link); // todo: make this link relative instead of absolute once we're done embedding the flash
+   						navigateToURL(request);
+					});
+					textbox.tb.nobutton.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
+						tbchange(currentmc);
+					});
+				}	
+
 				textbox.tb.dude.text = json[classname][chatindex].text; // dude. dude why is the .txt so deep. eff em ell
 				rootie.dogmc.gotoAndPlay(json[classname][chatindex].loop);
-				stage.setChildIndex(textbox, stage.numChildren-1);
-				stage.setChildIndex(selectrect, stage.numChildren-1);
-				selectrect.buttonMode = true;
 				chatindex += 1;
 			}
 			else{

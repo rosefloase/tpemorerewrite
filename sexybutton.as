@@ -5,7 +5,7 @@
 
 	public class sexybutton extends MovieClip {
 		
-		public var displaymc = new testmc;
+		public var displaymc;
 
 		public function sexybutton() {
 			// woof
