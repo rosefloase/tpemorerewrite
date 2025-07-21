@@ -15,34 +15,11 @@
 		private var chatindex = 0;
 
 		var rootie = this;
-		var stringjson;
-		var json;
-  		var urlLoader:URLLoader = new URLLoader();
-		public var jsonloaded = false;
+		var jsonpackage:dialouge = new dialouge;
+		var json = (JSON.parse(jsonpackage.jsonobject)).data;
 
 		public function main() {
 			// i love constructing!
-			var jsonurl = "dialouge.json";
-			var jsonloaded = false
-			var req:URLRequest;
-
-			var urlRequest:URLRequest  = new URLRequest(jsonurl);
-
-  			urlLoader.addEventListener(Event.COMPLETE, completeHandler);
-
-  			try{
-  				urlLoader.load(urlRequest);
-  			} catch (error:Error) {
-   				trace("Cannot load : " + error.message);
-  			}
-		}
-
-		private function completeHandler(asdf):void {
-   			 var loader:URLLoader = URLLoader(urlLoader);
-				stringjson = loader.data;
-  			  json = JSON.parse(loader.data);
-			  json = json.data;
-			  jsonloaded = true;
 		}
 
 		private function starteverything(){
