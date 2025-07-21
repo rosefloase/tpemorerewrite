@@ -13,7 +13,7 @@
 
 		public function init(){
 			addChild(displaymc);
-			trace("added kid");
+			displaymc.buttonMode = true;
 		}
 
 	}

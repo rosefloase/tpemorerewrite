@@ -16,6 +16,7 @@
 		public var currentmc;
 		private var chatindex = 0;
 
+		var rootie = this;
 		var stringjson;
 		var json;
   		var urlLoader:URLLoader = new URLLoader();
@@ -54,8 +55,8 @@
 			textbox.y = 388.45;
 
 			// then add buttons
-			addbutton(testmc, 177.75, 100.05);
-			addbutton(othertestmc, 428.95, 334.3);
+			addbutton(testmc, -215.15, -177.9);
+			addbutton(othertestmc, -128.95, -310.6);
 
 			// rectangle used for stealing inputs when the textbox is open
 			selectrect.graphics.beginFill(0x000000, 0);
@@ -69,7 +70,7 @@
 			var button:sexybutton = new sexybutton();
 			button.displaymc = new gif;
 			button.init();
-			stage.addChild(button)
+			rootie.mainmc.addChild(button)
 			button.x = x
 			button.y = y
 
@@ -94,10 +95,12 @@
 				textbox.tb.dude.text = json[classname][chatindex].text; // dude. dude why is the .txt so deep. eff em ell
 				stage.setChildIndex(textbox, stage.numChildren-1);
 				stage.setChildIndex(selectrect, stage.numChildren-1);
+				selectrect.buttonMode = true;
 				chatindex += 1;
 			}
 			else{
 				selectrect.removeEventListener(MouseEvent.CLICK, evilrectangle);
+				selectrect.buttonMode = false;
 				stage.setChildIndex(selectrect, 0);
 				textbox.gotoAndPlay("fall");
 				chatindex = 0;
