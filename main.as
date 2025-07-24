@@ -55,6 +55,9 @@
 
 		private function allowclick(){
 			stage.setChildIndex(selectrect, 0);
+			dogmc.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
+				tbchange(dog);
+			});
 		}
 
 		public function tbchange(whatmc){ // todo: clean this up when the flash is like. completely done.
@@ -82,8 +85,10 @@
 					stage.setChildIndex(textbox, stage.numChildren-1);
 
 					textbox.tb.yesbutton.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
-						var request:URLRequest = new URLRequest("https://thepersonever.net"+json[classname][chatindex-1].link); // todo: make this link relative instead of absolute once we're done embedding the flash
-   						navigateToURL(request);
+						var epicrequest:URLRequest;
+
+						epicrequest = new URLRequest(json[classname][chatindex-1].link);
+   						navigateToURL(epicrequest);
 					});
 					textbox.tb.nobutton.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
 						tbchange(currentmc);
