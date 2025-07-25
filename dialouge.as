@@ -32,6 +32,9 @@
 			{"text":"* (do you look at the old messages?)", "loop":"idle"},
 			{"text":"* [look at 123guestbook archive]", "loop":"idle", "link":"/guestbook/backup/1"},
 			{"text":"* (you decide to leave it alone)", "loop":"idle"}
+		],
+		"globe": [
+			{"text":"* wtf is a placeholder", "loop":"talk1"}
 		]
         }
     
