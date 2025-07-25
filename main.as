@@ -31,6 +31,7 @@
 
 			// then add buttons
 			addbutton(computer, -344.9, -769.75);
+			addbutton(guestbook, -299, -170.3);
 
 			// rectangle used for stealing inputs when the textbox is open
 			selectrect.graphics.beginFill(0x000000, 0);
