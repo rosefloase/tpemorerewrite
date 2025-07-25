@@ -32,7 +32,7 @@
 			// then add buttons
 			addbutton(computer, -344.9, -769.75);
 			addbutton(godot, -245, 90);
-			addbutton(guestbook, -54.6, -4.05);
+			addbutton(guestbook, -95, 30);
 
 			// rectangle used for stealing inputs when the textbox is open
 			selectrect.graphics.beginFill(0x000000, 0);
