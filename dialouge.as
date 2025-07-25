@@ -5,12 +5,6 @@
 {
     "data": 
         {
-		"computer": [
-			{"text":"* this is the greatest computer ever.", "loop":"talk2"},
-			{"text":"* it has an intel 3770-i7, an nvidia quatro 2200k, and 16 gigs of ram", "loop":"talk1"},
-			{"text":"* do u wanna buy it? (please say yes)", "loop":"talk1", "link":"/computer/"},
-        		{"text":"* sigh... okay", "loop":"talk1"}
-                ],
 		"dog": [ 
 			{"text":"* hi! i'm a dog", "loop":"talk2"},
 			{"text":"* i'm still like if a dog was a dog", "loop":"talk2"},
@@ -19,6 +13,15 @@
 			{"text":"* would you like to go to it now?", "loop":"talk1", "link":"https://github.com/rosefloase/tpemorerewrite"},
 			{"text":"* that's fine. you can always go check it out on the rosefloase github", "loop":"talk1"},
 			{"text":"* profile later! :p", "loop":"talk1"}
+		],
+		"computer": [
+			{"text":"* this is the greatest computer ever.", "loop":"talk2"},
+			{"text":"* it has an intel 3770-i7, an nvidia quatro 2200k, and 16 gigs of ram", "loop":"talk1"},
+			{"text":"* do u wanna buy it? (please say yes)", "loop":"talk1", "link":"/computer/"},
+        		{"text":"* sigh... okay", "loop":"talk1"}
+                ],
+		"godot": [
+			{"text":"* oh hey it's godot", "loop":"talk1"}
 		],
 		"guestbook": [ 
 			{"text":"* (you notice a guestbook on top of a box)", "loop":"idle"},
