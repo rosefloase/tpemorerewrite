@@ -21,6 +21,7 @@
         		{"text":"* sigh... okay", "loop":"talk1"}
                 ],
 		"godot": [
+			{"text":"* sexysex", "loop":"talk1"},
 			{"text":"* oh hey it's godot", "loop":"talk1"}
 		],
 		"guestbook": [ 
@@ -34,7 +35,13 @@
 			{"text":"* (you decide to leave it alone)", "loop":"idle"}
 		],
 		"globe": [
-			{"text":"* wtf is a placeholder", "loop":"talk1"}
+			{"text":"* oh! that's our globe :o", "loop":"talk1"},
+			{"text":"* it's a spinning catalog of all places that exist! (or at least some of the good", "loop":"talk1"},
+			{"text":"* ones)", "loop":"talk1"},
+			{"text":"* unlike other globes, this one has a unique Spinning Feature that lets you easily ", "loop":"talk1"},
+			{"text":"* browse its contents", "loop":"talk1"},
+			{"text":"* would you like to buy it?", "loop":"talk1", "link":"/otherslinks"},
+			{"text":"* damn okay. Mx. Worldwide over here", "loop":"talk1"}
 		]
         }
     
