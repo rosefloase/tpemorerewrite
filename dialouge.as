@@ -1,6 +1,8 @@
 ﻿package  {
 	public class dialouge{
-		
+
+//			{"text":"* sexysex", "loop":"talk1"},
+
 		public var jsonobject:String = (<![CDATA[
 {
     "data": 
@@ -21,8 +23,15 @@
         		{"text":"* sigh... okay", "loop":"talk1"}
                 ],
 		"godot": [
-			{"text":"* sexysex", "loop":"talk1"},
-			{"text":"* oh hey it's godot", "loop":"talk1"}
+			{"text":"* that's a cardboard cutout of my son, Godot.", "loop":"talk1"},
+			{"text":"* he's a really good prosecutor...", "loop":"talk1"},
+			{"text":"* and named after this one really awesome Free and Open Source game engine! haha", "loop":"talk1"},
+			{"text":"* so um", "loop":"talk1"},
+			{"text":"* like", "loop":"talk1"},
+			{"text":"* can you buy him", "loop":"talk1"},
+			{"text":"* please", "loop":"talk1"},
+			{"text":"* (buy this man's son? [go to godot devlog])", "loop":"talk1", "link":"/godot/"},
+			{"text":"* shiiiittttttttt", "loop":"talk1"}
 		],
 		"guestbook": [ 
 			{"text":"* (you notice a guestbook on top of a box)", "loop":"idle"},
