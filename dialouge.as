@@ -8,13 +8,13 @@
     "data": 
         {
 		"dog": [ 
-			{"text":"* hi! i'm a dog", "loop":"talk2"},
-			{"text":"* i'm still like if a dog was a dog", "loop":"talk2"},
-			{"text":"* and this... is still some lesbian's more page!", "loop":"talk2"},
-			{"text":"* unlike the last flash, this one is open-source :D", "loop":"talk1"},
-			{"text":"* would you like to go to it now?", "loop":"talk1", "link":"https://github.com/rosefloase/tpemorerewrite"},
-			{"text":"* that's fine. you can always go check it out on the rosefloase github", "loop":"talk1"},
-			{"text":"* profile later! :p", "loop":"talk1"}
+			{"text":"* hi! i'm a dog", "loop":"happytalk"},
+			{"text":"* i'm still like if a dog was a dog", "loop":"talk"},
+			{"text":"* and this... is still some lesbian's more page!", "loop":"smiletalk"},
+			{"text":"* unlike the last flash, this one is open-source :D", "loop":"happytalk"},
+			{"text":"* would you like to go to it now?", "loop":"smiletalk", "link":"https://github.com/rosefloase/tpemorerewrite"},
+			{"text":"* that's fine. you can always go check it out...", "loop":"otalk"},
+			{"text":"* on the rosefloase github profile later!", "loop":"smiletalk"}
 		],
 		"computer": [
 			{"text":"* this is the greatest computer ever.", "loop":"talk2"},
