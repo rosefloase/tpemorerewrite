@@ -58,9 +58,10 @@
 
 		private function allowclick(){
 			stage.setChildIndex(selectrect, 0);
-			dogmc.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
+			box.addEventListener(MouseEvent.CLICK, function(event:MouseEvent):void {
 				tbchange(dog);
 			});
+			box.buttonMode = true;
 		}
 
 		public function tbchange(whatmc){ // todo: clean this up when the flash is like. completely done.
