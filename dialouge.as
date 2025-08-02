@@ -55,7 +55,11 @@
 			{"text":"* browse its contents", "loop":"otalk"},
 			{"text":"* would you like to buy it?", "loop":"smiletalk", "link":"/otherslinks"},
 			{"text":"* damn okay. Mx. Worldwide over here", "loop":"ugh"}
-		]
+		],
+		"coffee": [
+			{"text":"* sexysex", "loop":"otalk"},
+			{"text":"* sexysex", "loop":"otalk"}
+			]
         }
     
 }
