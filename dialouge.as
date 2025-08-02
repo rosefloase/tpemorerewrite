@@ -23,7 +23,8 @@
 		"computer": [
 			{"text":"* this is the greatest computer ever.", "loop":"talk"},
 			{"text":"* it has an intel 3770-i7, an nvidia quatro 2200k, and 16 gigs of ram", "loop":"otalk"},
-			{"text":"* do u wanna buy it? (please say yes)", "loop":"pleasetalk", "link":"/computer/"},
+			{"text":"* do u wanna buy it? (please say yes)", "loop":"pleasetalk"},
+			{"text":"* (buy the computer? [go to computers page])", "loop":"please", "link":"/computer/"},
         		{"text":"* sigh... okay", "loop":"ugh"}
                 ],
 		"godot": [
@@ -53,7 +54,8 @@
 			{"text":"* ones)", "loop":"happytalk"},
 			{"text":"* unlike other globes, this one has a unique Spinning Feature that lets you easily ", "loop":"otalk"},
 			{"text":"* browse its contents", "loop":"otalk"},
-			{"text":"* would you like to buy it?", "loop":"smiletalk", "link":"/otherslinks"},
+			{"text":"* would you like to buy it?", "loop":"smiletalk"},
+			{"text":"* (buy the globe? [go to links page])", "loop":"smile", "link":"/otherslinks"},
 			{"text":"* damn okay. Mx. Worldwide over here", "loop":"ugh"}
 		],
 		"coffee": [
@@ -61,7 +63,7 @@
 			{"text":"* a donation jar", "loop":"otalk"},
 			{"text":"* jade really really pushed me to put this in here", "loop":"talk"},
 			{"text":"* do you want to put money in", "loop":"ugh"},
-			{"text":"* (put money in the cup? [go to MY AWESOME KO DASH FI])", "loop":"idle", "link":"https://ko-fi.com/thepersonever"},
+			{"text":"* (put money in the cup? [go to MY AWESOME KO - FI])", "loop":"idlelook", "link":"https://ko-fi.com/thepersonever"},
 			{"text":"* okay cool", "loop":"talk"},
 			{"text":"* now you can buy some of MY shit", "loop":"smiletalk"}
 			]
