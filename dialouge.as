@@ -57,8 +57,13 @@
 			{"text":"* damn okay. Mx. Worldwide over here", "loop":"ugh"}
 		],
 		"coffee": [
-			{"text":"* sexysex", "loop":"otalk"},
-			{"text":"* sexysex", "loop":"otalk"}
+			{"text":"* oh! thats um", "loop":"otalk"},
+			{"text":"* a donation jar", "loop":"otalk"},
+			{"text":"* jade really really pushed me to put this in here", "loop":"talk"},
+			{"text":"* do you want to put money in", "loop":"ugh"},
+			{"text":"* (put money in the cup? [go to MY AWESOME KO DASH FI])", "loop":"idle", "link":"https://ko-fi.com/thepersonever"},
+			{"text":"* okay cool", "loop":"talk"},
+			{"text":"* now you can buy some of MY shit", "loop":"smiletalk"}
 			]
         }
     
