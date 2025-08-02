@@ -18,24 +18,24 @@
 			{"text":"* unlike the last flash, this one is open-source :D", "loop":"happytalk"},
 			{"text":"* would you like to go to it now?", "loop":"smiletalk", "link":"https://github.com/rosefloase/tpemorerewrite"},
 			{"text":"* that's fine. you can always go check it out...", "loop":"otalk"},
-			{"text":"* on the rosefloase github profile later!", "loop":"smiletalk"}
+			{"text":"* on the rosefloase github profile later!", "loop":"happytalk"}
 		],
 		"computer": [
 			{"text":"* this is the greatest computer ever.", "loop":"talk"},
 			{"text":"* it has an intel 3770-i7, an nvidia quatro 2200k, and 16 gigs of ram", "loop":"otalk"},
-			{"text":"* do u wanna buy it? (please say yes)", "loop":"talk1", "link":"/computer/"},
-        		{"text":"* sigh... okay", "loop":"talk1"}
+			{"text":"* do u wanna buy it? (please say yes)", "loop":"pleasetalk", "link":"/computer/"},
+        		{"text":"* sigh... okay", "loop":"ugh"}
                 ],
 		"godot": [
-			{"text":"* that's a cardboard cutout of my son, Godot.", "loop":"talk1"},
-			{"text":"* he's a really good prosecutor...", "loop":"talk1"},
-			{"text":"* and named after this one really awesome Free and Open Source game engine! haha", "loop":"talk1"},
-			{"text":"* so um", "loop":"talk1"},
-			{"text":"* like", "loop":"talk1"},
-			{"text":"* can you buy him", "loop":"talk1"},
-			{"text":"* please", "loop":"talk1"},
-			{"text":"* (buy this man's son? [go to godot devlog])", "loop":"talk1", "link":"/godot/"},
-			{"text":"* shiiiittttttttt", "loop":"talk1"}
+			{"text":"* that's a cardboard cutout of my son, Godot.", "loop":"otalk"},
+			{"text":"* he's a really good prosecutor...", "loop":"smiletalk"},
+			{"text":"* and named after this one really awesome Free and Open Source game engine! haha", "loop":"happytalk"},
+			{"text":"* so um", "loop":"smiletalk"},
+			{"text":"* like", "loop":"otalk"},
+			{"text":"* can you buy him", "loop":"talk"},
+			{"text":"* please", "loop":"pleasetalk"},
+			{"text":"* (buy this man's son? [go to godot devlog])", "loop":"please", "link":"/godot/"},
+			{"text":"* shiiiittttttttt", "loop":"talk"}
 		],
 		"guestbook": [ 
 			{"text":"* (you notice a guestbook on top of a box)", "loop":"idle"},
@@ -48,13 +48,13 @@
 			{"text":"* (you decide to leave it alone)", "loop":"idle"}
 		],
 		"globe": [
-			{"text":"* oh! that's our globe :o", "loop":"talk1"},
-			{"text":"* it's a spinning catalog of all places that exist! (or at least some of the good", "loop":"talk1"},
-			{"text":"* ones)", "loop":"talk1"},
-			{"text":"* unlike other globes, this one has a unique Spinning Feature that lets you easily ", "loop":"talk1"},
-			{"text":"* browse its contents", "loop":"talk1"},
-			{"text":"* would you like to buy it?", "loop":"talk1", "link":"/otherslinks"},
-			{"text":"* damn okay. Mx. Worldwide over here", "loop":"talk1"}
+			{"text":"* oh! that's our globe :o", "loop":"otalk"},
+			{"text":"* it's a spinning catalog of all places that exist! (or at least some of the good", "loop":"happytalk"},
+			{"text":"* ones)", "loop":"happytalk"},
+			{"text":"* unlike other globes, this one has a unique Spinning Feature that lets you easily ", "loop":"otalk"},
+			{"text":"* browse its contents", "loop":"otalk"},
+			{"text":"* would you like to buy it?", "loop":"smiletalk", "link":"/otherslinks"},
+			{"text":"* damn okay. Mx. Worldwide over here", "loop":"ugh"}
 		]
         }
     
