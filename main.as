@@ -101,7 +101,13 @@
 				}	
 
 				textbox.tb.dude.text = json[classname][chatindex].text; // dude. dude why is the .txt so deep. eff em ell
-				rootie.dogmc.gotoAndPlay(json[classname][chatindex].loop);
+				if (chatindex == 0 && json[classname][chatindex].loop != "idle"){
+					rootie.dogmc.togo = (json[classname][chatindex].loop);
+					rootie.dogmc.gotoAndPlay("goback");
+				}
+				else{
+					rootie.dogmc.gotoAndPlay(json[classname][chatindex].loop);
+				}
 				chatindex += 1;
 			}
 			else{
@@ -109,7 +115,10 @@
 				selectrect.buttonMode = false;
 				stage.setChildIndex(selectrect, 0);
 				textbox.gotoAndPlay("fall");
-				rootie.dogmc.gotoAndPlay("idle");
+				if (rootie.dogmc.togo != "idle"){
+					rootie.dogmc.togo = "idle";
+					rootie.dogmc.gotoAndPlay("goback");
+				}
 				chatindex = 0;
 			}
 		}
