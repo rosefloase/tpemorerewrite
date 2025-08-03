@@ -71,8 +71,6 @@
 
 			switch (textbox.currentstate){
 				case "hidden":
-					textbox.gotoAndPlay("rise");
-					selectrect.addEventListener(MouseEvent.CLICK, evilrectangle);
 
 				break;
 				default: 
@@ -101,9 +99,14 @@
 				}	
 
 				textbox.tb.dude.text = json[classname][chatindex].text; // dude. dude why is the .txt so deep. eff em ell
-				if (chatindex == 0 && json[classname][chatindex].loop != "idle"){
-					rootie.dogmc.togo = (json[classname][chatindex].loop);
-					rootie.dogmc.gotoAndPlay("goback");
+
+				if (chatindex == 0){
+					textbox.gotoAndPlay("rise");
+					selectrect.addEventListener(MouseEvent.CLICK, evilrectangle);
+					if (json[classname][chatindex].loop != "idle"){
+						rootie.dogmc.togo = (json[classname][chatindex].loop);
+						rootie.dogmc.gotoAndPlay("goback");
+					}
 				}
 				else{
 					rootie.dogmc.gotoAndPlay(json[classname][chatindex].loop);
