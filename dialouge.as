@@ -36,7 +36,7 @@
 			{"text":"* can you buy him", "loop":"talk"},
 			{"text":"* please", "loop":"pleasetalk"},
 			{"text":"* (buy this man's son? [go to godot devlog])", "loop":"please", "link":"/godot/"},
-			{"text":"* shiiiittttttttt", "loop":"talk"}
+			{"text":"* shiiiittttttttt", "loop":"ugh"}
 		],
 		"guestbook": [ 
 			{"text":"* (you notice a guestbook on top of a box)", "loop":"idle"},
