@@ -50,8 +50,8 @@
 		],
 		"globe": [
 			{"text":"* oh! that's our globe :o", "loop":"otalk"},
-			{"text":"* it's a spinning catalog of all places that exist! (or at least some of the good", "loop":"happytalk"},
-			{"text":"* ones)", "loop":"happytalk"},
+			{"text":"* it's a spinning catalog of all places that exist! (or at least some of the", "loop":"happytalk"},
+			{"text":"* good ones)", "loop":"happytalk"},
 			{"text":"* unlike other globes, this one has a unique Spinning Feature that lets you easily ", "loop":"otalk"},
 			{"text":"* browse its contents", "loop":"otalk"},
 			{"text":"* would you like to buy it?", "loop":"smiletalk"},
