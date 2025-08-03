@@ -16,7 +16,7 @@
 			{"text":"* made everything else in this flash", "loop":"talk"},
 			{"text":"* mostly", "loop":"talk"},
 			{"text":"* unlike the last flash, this one is open-source :D", "loop":"happytalk"},
-			{"text":"* would you like to go to it now?", "loop":"smiletalk", "link":"https://github.com/rosefloase/tpemorerewrite"},
+			{"text":"* would you like to go to the source code now?", "loop":"smiletalk", "link":"https://github.com/rosefloase/tpemorerewrite"},
 			{"text":"* that's fine. you can always go check it out...", "loop":"otalk"},
 			{"text":"* on the rosefloase github profile later!", "loop":"happytalk"}
 		],
@@ -63,7 +63,7 @@
 			{"text":"* a donation jar", "loop":"otalk"},
 			{"text":"* jade really really pushed me to put this in here", "loop":"talk"},
 			{"text":"* do you want to put money in", "loop":"ugh"},
-			{"text":"* (put money in the cup? [go to MY AWESOME KO - FI])", "loop":"idlelook", "link":"https://ko-fi.com/thepersonever"},
+			{"text":"* (put money in the cup? [go to MY AWESOME KO - FI])", "loop":"ughlook", "link":"https://ko-fi.com/thepersonever"},
 			{"text":"* okay cool", "loop":"talk"},
 			{"text":"* now you can buy some of MY shit", "loop":"smiletalk"}
 			]
